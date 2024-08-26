@@ -36,7 +36,7 @@ def caesar_cipher(string, shift_factor)
   end
   encrypted_string = array_ords_shift.map{ |num| num.chr }.join
 
-  p encrypted_string
+  return encrypted_string
 
 end
 
