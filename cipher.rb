@@ -5,13 +5,6 @@ def caesar_cipher(string, shift_factor)
   # modified string:
   # > caesar_cipher("What a string!", 5)
   # => "Bmfy f xywnsl!"
-
-  ########################
-  #     ASCII CHART
-  #   65 -  90  =>  A - Z
-  #   97 - 122  =>  a - z
-  ########################
-
   uppercase_range = (65..90)
   lowercase_range = (97..122)
 
@@ -39,4 +32,5 @@ def caesar_cipher(string, shift_factor)
   array_ords_shift.map(&:chr).join
 end
 
-caesar_cipher('What a string!', 5)
+# testing
+puts caesar_cipher('What a string!', 5)
